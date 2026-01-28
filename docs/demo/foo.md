@@ -1,0 +1,7 @@
+---
+title: foo
+createTime: 2026/01/28 14:39:28
+permalink: /demo/nesbr07i/
+---
+
+[bar](./bar.md)
