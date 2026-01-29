@@ -7,9 +7,9 @@ config:
     full: true
     forceDark: true
     # effect: lightning
-    backgroundImage: https://api.bimg.cc/random?w=1920&h=1080&mkt=zh-CN
+    backgroundImage: https://bing-wallpaper-api-sm98.vercel.app/today
     hero:
-      name: 小贺的记录站
+      name: 欢迎来到小贺的记录站
       text: https://v1.hitokoto.cn/
       actions:
         -

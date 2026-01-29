@@ -2,12 +2,12 @@
 import type { ThemeHomeHero } from 'vuepress-theme-plume'
 import {  VPHomeHero } from 'vuepress-theme-plume/client'
 import { useData } from 'vuepress-theme-plume/client';
-import { computed, ref, watch, onMounted } from 'vue'
+import { computed, ref, onMounted } from 'vue'
 import { isLinkHttp } from 'vuepress/shared';
 
 
 const props = defineProps<ThemeHomeHero>()
-const { frontmatter, isDark } = useData<'home'>()
+const { frontmatter } = useData<'home'>()
 
 const heroTemp = computed(() => props.hero ?? frontmatter.value.hero ?? {})
 const hero = ref({name: heroTemp.value.name ?? '', tagline: heroTemp.value.tagline ?? '', text:'', actions: heroTemp.value.actions ?? []})
