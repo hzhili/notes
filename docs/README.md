@@ -7,7 +7,7 @@ config:
     full: true
     forceDark: true
     # effect: lightning
-    backgroundImage: https://bing-wallpaper-api-sm98.vercel.app/today
+    backgroundImage: https://bing.hezhili.he.cn/today
     hero:
       name: 欢迎来到小贺的记录站
       text: https://v1.hitokoto.cn/
