@@ -18,7 +18,7 @@ import collections from './collections'
  * @see https://theme-plume.vuejs.press/config/theme/
  */
 export default defineThemeConfig({
-  logo: 'https://theme-plume.vuejs.press/plume.png',
+  logo: '/logo.png',
 
   appearance: true,  // 配置 深色模式
 
@@ -38,7 +38,7 @@ export default defineThemeConfig({
   // prevPage: true,   // 是否启用上一页链接
   // nextPage: true,   // 是否启用下一页链接
   // createTime: true, // 是否显示文章创建时间
-
+  footer: false,
   /* 站点页脚 */
   // footer: {
   //   message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
@@ -49,12 +49,11 @@ export default defineThemeConfig({
    * @see https://theme-plume.vuejs.press/config/theme/#profile
    */
   profile: {
-    avatar: 'https://theme-plume.vuejs.press/plume.png',
+    avatar: '/logo.png',
     name: '小贺的记录站',
-    description: '杂项记录',
-    // circle: true,
-    // location: '',
-    // organization: '',
+    description: '内心湛然，则无往而不乐。',
+    circle: true,
+    location: 'ZhengZhou, China',
   },
 
   navbar,
@@ -72,10 +71,10 @@ export default defineThemeConfig({
   // },
 
   /* 过渡动画 @see https://theme-plume.vuejs.press/config/theme/#transition */
-  // transition: {
-  //   page: true,        // 启用 页面间跳转过渡动画
-  //   postList: true,    // 启用 博客文章列表过渡动画
-  //   appearance: 'fade',  // 启用 深色模式切换过渡动画, 或配置过渡动画类型
-  // },
+  transition: {
+    page: true,        // 启用 页面间跳转过渡动画
+    postList: true,    // 启用 博客文章列表过渡动画
+    appearance: 'blinds-vertical',  // 启用 深色模式切换过渡动画, 或配置过渡动画类型
+  },
 
 })
